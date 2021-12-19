@@ -1,0 +1,859 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+}
+
+html, body {
+  height: 100%;
+  background-color: black;
+  color: #ffffff;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+/* REPEATED                   REPEATED                                 REPEATED */
+.fontH1,.fontH3,.tablinksD,.fontD2,.fontD3,.fontC3,.fontT1,.fontT3{
+  color: #D0D6F9;
+}
+.fontH3,.tabD,.fontD2,.fontD3,.fontC3,.fontT1,.fontT3{
+  font-family: 'Barlow Condensed';
+}
+.numberD,.numberC,.numberT{
+  padding-right: 1vmin;
+  color: #3d3d3d;
+}
+.oneD h5,.oneC h5,.oneT h5{
+  font-size: clamp(1.3rem, 1.6vw, 2.5rem);
+  display: inline-block;
+  letter-spacing: 0.4vw;
+}
+.fontH3,.fontD2,.fontC3,.fontT1, .fontT3{
+  letter-spacing: 0.06vw;
+    line-height: 1.6;
+    font-size: clamp(0.92rem, 1.2vw, 1.8rem);
+    max-width: 50ch;
+    min-width: 49ch;
+    white-space: normal;
+}
+.fontC2,.fontT2{
+  letter-spacing: -0.1vw;
+    line-height: 1.6;
+    white-space: nowrap;
+    font-size: clamp(2.3rem, 3.2vw, 8.5rem);
+}
+
+#HOME,#DESTINATION,#CREW,#TECHNOLOGY {
+  overflow: auto;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+/* REPEATED                   REPEATED                                 REPEATED  */
+
+/* NAV TAB                 NAV TAB                           NAV TAB*/
+.gridN {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 8.318vw);
+  grid-auto-rows: minmax(5vh, auto);
+  align-items: center;
+  position: absolute;
+}
+
+.logo {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  position: absolute;
+  left: 25%;
+  width: 5vmin;
+  z-index: 1;
+}
+.logoM{
+  display: none;
+}
+.oneN {
+  grid-column-start: 2;
+  grid-column-end: 13;
+  grid-row-start: 2;
+}
+
+.logohr1 {
+  width: 5%;
+  position: absolute;
+  right: 96%;
+  border-style: solid;
+  border-color: #3d3d3d;
+  border-width: 0.01vw;
+  bottom: 50%;
+}
+
+.logohr2 {
+  z-index: 1;
+  grid-column-start: 2;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  display: inline-block;
+  width: 100%;
+  border-style: solid;
+  border-color: #3d3d3d;
+  border-width: 0.01vw;
+  position: absolute;
+  bottom: 50%;
+  z-index: 1;
+}
+
+.tab {
+  backdrop-filter: blur(10px);
+  background-color: rgba(64, 64, 64, 0.2);
+  position: relative;
+  float: right;
+  padding: 0% 8.1vw;
+  z-index: 2;
+  white-space: nowrap;
+}
+
+.tab button {
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 3.1vh 0px;
+  margin: 0px 1.2vw;
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0);
+  letter-spacing: 0.15vw;
+  font-size: clamp(0.85rem, 0.8vw, 1.3rem);
+}
+
+.tab button:hover, .tabD button:hover {
+  border-bottom: 0.2vw solid #7f7f7f;
+}
+
+.tab button.active, .tabD button.active {
+  border-bottom: 0.2vw solid #ffffff;
+}
+
+.tabcontent {
+  display: none;
+  border: none;
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* NAV TAB                 NAV TAB                           NAV TAB*/
+/* HOME                          HOME                         HOME  */
+#HOME {
+    background-image: url("images/home/homeD.jpg");
+}
+
+.gridH {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 8.32vw);
+  grid-auto-rows: minmax(10vh, auto);
+  align-items: end;
+  justify-items: center;
+}
+
+.oneH {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 5;
+}
+
+.twoH {
+  grid-column-start: 10;
+  grid-column-end: 11;
+  grid-row-start: 5;
+}
+
+.fontH1 {
+  font-size: clamp(1.3rem, 1.58vw, 2.5rem);
+  letter-spacing: 0.3vw;
+  white-space: nowrap;
+  padding-bottom: 3vh;
+}
+
+.fontH2 {
+  font-size: clamp(6.25rem, 8.5vw, 13.5rem);
+}
+
+.buttonH {
+  width: clamp(12rem, 14vw, 24rem);
+  height: clamp(12rem, 14vw, 24rem);
+  font-size: clamp(1.5rem, 1.8vw, 3rem);
+  border-radius: 50%;
+  border: none;
+
+}
+@keyframes boxshadow {
+  from {
+    box-shadow: 0 0 0 0rem rgba(255, 255, 255, 0.0);
+  }
+
+  to {
+  box-shadow: 0 0 0 4rem rgba(255, 255, 255, 0.1);
+  }
+}
+.buttonH:hover {
+  box-shadow: 0 0 0 4rem rgba(255, 255, 255, 0.1);
+  animation: boxshadow 1s;
+}
+
+/* HOME                          HOME                         HOME  */
+/* DESTINATION                    DESTINATION                DESTINATION*/
+#DESTINATION {
+  background-image: url("images/destination/backgroundD.jpg");
+  }
+
+.gridD {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 8.32vw);
+  grid-auto-rows: minmax(10vh, auto);
+  align-items: end;
+}
+
+.oneD {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  white-space: nowrap;
+  justify-self: center;
+}
+
+.twoD {
+  grid-column-start: 8;
+  grid-column-end: 10;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  align-self: center;
+}
+
+.tabD {
+  white-space: nowrap;
+}
+
+.tabD button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1vh 0;
+  margin: 0 0.4vw;
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0);
+  letter-spacing: 0.1vw;
+  font-size: clamp(0.85rem, 0.8vw, 1.3rem);
+}
+
+.tabcontentD {
+  display: none;
+  border: none;
+  animation: fadeEffect 1s;
+}
+
+.threeD {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 5;
+  justify-self: center;
+}
+
+.threeD img {
+  width: 24vw;
+  min-width: 21rem;
+}
+
+.fourD {
+  grid-column-start: 8;
+  grid-column-end: 11;
+  grid-row-start: 5;
+  grid-row-end: 5;
+  white-space: nowrap;
+}
+
+.fontD1 {
+  font-size: clamp(4.2rem, 5.5vw, 8.5rem);
+}
+
+.fourD hr {
+  margin: 6vh 0 3.5vh 0;
+  border-style: solid;
+  border-color: #3d3d3d;
+  border-width: 0.01vw;
+}
+
+.Traveldistance {
+  display: inline-block;
+  margin-right: 15%;
+}
+
+.Traveltime {
+  display: inline-block;
+}
+
+.fontD3 {
+  font-size: clamp(0.8rem, 0.9vw, 1.4rem);
+  letter-spacing: 0.13vw;
+}
+
+.fontD4 {
+  font-size: clamp(1.3rem, 1.5vw, 2.3rem);
+}
+
+/* DESTINATION                    DESTINATION                DESTINATION*/
+/* CREW                             CREW                         CREW */
+#CREW {
+    background-image: url("images/crew/crewD.jpg");
+}
+
+.gridC {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 8.32vw);
+  grid-template-rows: repeat(12, minmax(8.337vh, auto));
+  align-items: end;
+}
+
+.oneC {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  white-space: nowrap;
+}
+
+.twoC {
+  grid-column-start: 8;
+  grid-column-end: 12;
+  grid-row-start: 3;
+  grid-row-end: 13;
+  justify-self: center;
+}
+
+#CREW img.SPECIALIST {
+  width: 25vw;
+  min-width: 19rem;
+}
+
+#CREW img {
+  width: 27.5vw;
+  min-width: 21rem;
+}
+
+.threeC {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 11;
+}
+
+.tabC {
+  background-color: rgba(64, 64, 64, 0.0);
+}
+
+.tabC button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 50%;
+  background-color: #454545;
+  width: 0.8vw;
+  height: 0.8vw;
+  margin: 0 0.5vw;
+  min-width: 0.7rem;
+  min-height: 0.7rem;
+}
+
+.tabC .COMMANDER {
+  margin-left: 0px;
+}
+
+.tabcontentC {
+  display: none;
+  border: none;
+  animation: fadeEffect 1s;
+}
+
+.tabC button:hover {
+  border-bottom: 0.2vw solid rgba(64, 64, 64, 0.0);
+  background-color: #7f7f7f;
+}
+
+.tabC button.active {
+  background-color: #ffffff;
+}
+
+.fourC {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 10;
+  align-self: center;
+}
+
+.fontC1 {
+  font-size: clamp(1.3rem, 1.6vw, 2.5rem);
+  color: #7a7a7a;
+}
+
+#CREW hr{
+  display: none;
+}
+/* CREW                             CREW                         CREW */
+
+/* TECHNOLOGY                       TECHNOLOGY                   TECHNOLOGY */
+#TECHNOLOGY {
+    background-image: url("images/technology/backgroundD.jpg");
+  }
+
+.gridT {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(12, 8.32vw);
+  grid-auto-rows: minmax(10.5vh, auto);
+  align-items: center;
+}
+
+.oneT {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  white-space: nowrap;
+  align-self: center
+}
+
+.twoT {
+  grid-column-start: 7;
+  grid-column-end: 13;
+  grid-row-start: 3;
+  grid-row-end: 10;
+  justify-self: end;
+}
+
+.portrait img {
+  width: 31vw;
+  min-width: 18rem;
+}
+.landscape{
+  display: none;
+}
+
+.threeT {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 9;
+}
+
+.tabT {
+  background-color: rgba(64, 64, 64, 0.0);
+}
+
+.tabT button {
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 50%;
+  background-color: rgba(64, 64, 64, 0.0);
+  width: 5vw;
+  height: 5vw;
+  margin: 2vh 0;
+  min-width: 3.5rem;
+  min-height: 3.5rem;
+  display: block;
+  border: 0.1vw solid #454545;
+  font-size: clamp(1rem, 2vw, 10rem);
+  color: #ffffff;
+}
+
+.tabcontentT {
+  display: none;
+  border: none;
+  animation: fadeEffect 1s;
+}
+
+.tabT button:hover {
+  /* border-bottom: 0.2vw solid rgba(64, 64, 64, 0.0); */
+  border: 0.1vw solid #ffffff;
+}
+
+.tabT button.active {
+  background-color: #ffffff;
+  color: black;
+}
+
+.fourT {
+  grid-column-start: 3;
+  grid-column-end: 9;
+  grid-row-start: 4;
+  grid-row-end: 9;
+  margin-left: 5%;
+}
+.fontT1{
+  letter-spacing: 0.19vw;
+}
+
+/* TECHNOLOGY                       TECHNOLOGY                   TECHNOLOGY */
+
+/* TABLET                      TABLET                           TABLET */
+
+@media only screen and (max-width: 801px) {
+body{
+  text-align: center;
+}
+/* NAV                   NAV                                           NAV*/
+.gridN{
+  text-align: initial;
+}
+.logohr1,.logohr2{
+  display: none;
+}
+.logo,.oneN{
+  grid-row-start: 1;
+}
+.tab{
+  padding: 0 4vw;
+}
+.tab button{
+  font-size: clamp(0.65rem, 1.9vw, 0.85rem);
+}
+/* NAV                   NAV                                           NAV*/
+/* REPEATED                 REPEATED                                   REPEATED */
+.gridD,.gridC,.gridT{
+  justify-items: center;
+}
+.oneD,.oneC,.oneT{
+    justify-self: start;
+    align-self: center;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin: 2rem 0;
+}
+.numberD, .numberC, .numberT{
+  margin-left: 5vw;
+}
+.oneH,.twoH,.oneD,.twoD,.threeD,.fourD,.oneC,.twoC,.threeC,.fourC,.oneT,.twoT,.threeT,.fourT{
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+/* REPEATED                 REPEATED                                   REPEATED */
+
+/* HOME                    HOME                                      HOME */
+#HOME{
+  background-image: url("images/home/background-home-tablet.jpg");
+}
+.oneH{
+  grid-row-start: 3;
+}
+.buttonH{
+  margin: 2.5rem 0 5rem 0;
+}
+
+/* HOME                    HOME                                      HOME */
+/* DESTINATION                    DESTINATION                    DESTINATION  */
+#DESTINATION{
+  background-image: url("images/destination/background-destination-tablet.jpg");
+}
+.twoD{
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+.threeD{
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+.threeD img{
+  min-width: 16rem;
+}
+.fourD{
+  grid-row-start: 5;
+  grid-row-end: 5;
+  margin-bottom: 2rem;
+}
+.fontD2{
+  max-width: 68ch;
+}
+/* DESTINATION                    DESTINATION                    DESTINATION  */
+/* CREW                          CREW                              CREW */
+#CREW{
+  background-image: url("images/crew/background-crew-tablet.jpg");
+}
+#CREW img.SPECIALIST{
+  width: 30vh;
+  min-width: 11.5rem;
+}
+#CREW img{
+  width: 33vh;
+  min-width: 14rem;
+}
+.twoC{
+  grid-row-start: 7;
+  margin-top: 2rem;
+}
+.threeC{
+  grid-row-start: 6;
+  grid-row-end: 8;
+  align-self: center;
+  margin-top: 1.5rem;
+}
+.tabC button{
+  min-width: 0.5rem;
+  min-height: 0.5rem;
+}
+.fourC{
+  grid-row-start: 3;
+  grid-row-end: 7;
+}
+.fontC3{
+  max-width: 62ch;
+}
+/* CREW                          CREW                              CREW */
+/* TECHNOLOGY                    TECHNOLOGY                    TECHNOLOGY */
+#TECHNOLOGY{
+  background-image: url("images/technology/background-technology-tablet.jpg");
+}
+.gridT{
+  overflow-x: hidden;
+}
+.twoT{
+  width: 100%;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.portrait{
+  display: none;
+}
+.landscape{
+  display: block;
+  }
+.landscape img{
+  width: 101vw;
+}
+.threeT{
+  grid-row-start: 5;
+  grid-row-end: 6;
+  margin: 2rem 0;
+}
+.tabT button{
+  display: initial;
+  margin: 0 0.5rem;
+}
+.fourT{
+  grid-row-start: 6;
+  grid-row-end: 8;
+  margin: 0 0 1.5rem 0;
+}
+.fontT3{
+  max-width: 52ch;
+}
+/* TECHNOLOGY                    TECHNOLOGY                    TECHNOLOGY */
+}
+/* TABLET                      TABLET                           TABLET */
+
+
+/* PHONE                          PHONE                        PHONE */
+@media only screen and (max-width: 481px) {
+.logo,.logohr1,.logohr2,.tab{
+  display: none;
+}
+.logoM{
+  display: initial;
+  position: absolute;
+  left: 3%;
+  width: 2.5rem;
+  top: 1rem;
+  z-index: 1;
+}
+/* NAV                              NAV                         NAV */
+.gridN{
+  position: fixed;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width: 4rem;
+  height: 4rem;
+  cursor:pointer;
+  transition: all .5s ease-in-out;
+  right: 0;
+  z-index: 1;
+}
+.tab{
+  padding: 30vh 5vw 50vh 3vw;
+  right: -300%;
+  top: -1000%;
+  z-index: -1;
+}
+.open .tab{
+  display: initial;
+}
+.oneN{
+  width: 1.5rem;
+  height: 0.2rem;
+  background: #fff;
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
+}
+
+.oneN::before,
+.oneN::after{
+  content: '';
+  position: absolute;
+  width: 1.5rem;
+  height: 0.2rem;
+  background: #fff;
+  border-radius: 0.31rem;
+  transition: all .5s ease-in-out;
+}
+.oneN::before{
+  transform: translateY(-0.6rem);
+}
+.oneN::after{
+  transform: translateY(0.6rem);
+}
+.gridN.open .oneN{
+  transform: translateX(-3.1rem);
+  background: transparent;
+}
+.gridN.open .oneN::before{
+  transform: rotate(45deg) translate(2.19rem, -2.19rem);
+}
+.gridN.open .oneN::after{
+  transform: rotate(-45deg) translate(2.19rem, 2.19rem);
+}
+/* NAV                              NAV                               NAV */
+
+/* REPEATED                 REPEATED                                   REPEATED */
+.fontH1,.buttonH{
+  font-size: clamp(1rem, 4.5vw, 1.3rem);
+}
+.fontH3, .fontD2, .fontC3, .fontT1, .fontT3{
+  max-width: 40ch;
+  min-width: 40ch;
+  margin: auto;
+}
+.oneD h5, .oneC h5, .oneT h5{
+  font-size: clamp(1rem, 4vw, 1.2rem);
+}
+.numberD, .numberC, .numberT{
+  margin: 0;
+}
+.oneC, .oneT{
+  justify-self: end;
+  margin-right: 20vw;
+}
+.fontC2, .fontT2{
+  font-size: clamp(1.5rem, 3.2vw, 8.5rem);
+}
+/* REPEATED                 REPEATED                                   REPEATED */
+
+/* HOME                            HOME                               HOME*/
+#HOME{
+  background-image: url("images/home/background-home-mobile.jpg");
+}
+.fontH2{
+  font-size: clamp(4rem, 17vw, 5rem);
+}
+.buttonH{
+  width: clamp(8rem, 34vw, 10rem);
+  height: clamp(8rem, 34vw, 10rem);
+}
+.buttonH:hover {
+  box-shadow: 0 0 0 3rem rgba(255, 255, 255, 0.1);
+}
+@keyframes boxshadow {
+  from {
+    box-shadow: 0 0 0 0rem rgba(255, 255, 255, 0.0);
+  }
+
+  to {
+  box-shadow: 0 0 0 3rem rgba(255, 255, 255, 0.1);
+  }
+}
+  /* HOME                            HOME                               HOME*/
+
+/* DESTINATION                      DESTINATION                  DESTINATION */
+#DESTINATION{
+  background-image: url("images/destination/background-destination-mobile.jpg");
+}
+.oneD{
+  justify-self: end;
+  margin-right: 5vw;
+}
+.threeD img{
+  width: 45vw;
+  min-width: 10rem;
+}
+.fontD1{
+  font-size: clamp(3rem, 5.5vw, 8.5rem);
+}
+.Traveldistance {
+  display: block;
+  margin: 0 0 1.5rem 0;
+}
+/* DESTINATION                      DESTINATION                  DESTINATION */
+
+/* CREW                              CREW                              CREW  */
+#CREW{
+  background-image: url("images/crew/background-crew-mobile.jpg");
+}
+.gridC{
+  grid-template-rows: minmax(10vh, auto);
+}
+.twoC{
+  grid-row-start: 3;
+  grid-row-end: none;
+  width: 100%;
+}
+#CREW img{
+  min-width: 11rem;
+  margin: auto;
+}
+#CREW img.SPECIALIST{
+  min-width: 10rem;
+}
+#CREW hr{
+  display: block;
+  margin: auto;
+  width: 85%;
+  position: initial;
+}
+.threeC{
+  grid-row-start: 4;
+  grid-row-end: auto;
+}
+.fourC{
+  margin: 1.5rem 0 5rem 0;
+  grid-row-start: 5;
+  grid-row-end: auto;
+}
+.fontC1{
+  font-size: clamp(1rem, 4vw, 1.1rem);
+}
+/* CREW                              CREW                              CREW  */
+/* TECHNOLOGY                        TECHNOLOGY                  TECHNOLOGY */
+#TECHNOLOGY{
+  background-image: url("images/technology/background-technology-mobile.jpg");
+}
+/* TECHNOLOGY                        TECHNOLOGY                  TECHNOLOGY */
+
+}
