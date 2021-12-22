@@ -517,7 +517,7 @@ html, body {
 
 /* TABLET                      TABLET                           TABLET */
 
-@media only screen and (max-width: 801px), (orientation: portrait) {
+@media only screen and (max-width: 801px) {
 body{
   text-align: center;
 }
