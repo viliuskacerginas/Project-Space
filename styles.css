@@ -575,7 +575,7 @@ body{
   font-size: clamp(7rem, 20vw, 14rem);
 }
 .fontH3{
-  font-size: clamp(0.92rem, 2.5vw, 1.8rem);
+  font-size: clamp(0.92rem, 2.4vw, 1.8rem);
   max-width: 54ch;
   min-width: 54ch;
   margin: auto;
