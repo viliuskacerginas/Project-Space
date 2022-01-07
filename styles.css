@@ -4,7 +4,9 @@
   font-family: 'Bellefair', serif;
   font-weight: 400;
 }
-
+body{
+  min-height: -webkit-fill-available;
+}
 html, body {
 /*   position: fixed; */
   height: 100%;
