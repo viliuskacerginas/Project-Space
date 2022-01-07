@@ -4,10 +4,15 @@
   font-family: 'Bellefair', serif;
   font-weight: 400;
 }
-
+body {
+   min - height: 100 vh;
+   min - height: -webkit - fill - available;
+}
+html {
+   height: -webkit - fill - available;
+}
 html, body {
-/*   position: fixed; */
-  height: 100vh;
+/*   position: fixed; */  
   background-color: black;
   color: #ffffff;
   -ms-overflow-style: none;
