@@ -6,7 +6,7 @@
 }
 
 html, body {
-  position: fixed;
+/*   position: fixed; */
   height: 100%;
   background-color: black;
   color: #ffffff;
@@ -48,6 +48,7 @@ html, body {
 }
 
 #HOME,#DESTINATION,#CREW,#TECHNOLOGY {
+  min-height: -webkit-fill-available;
   overflow: auto;
   height: 100%;
   background-repeat: no-repeat;
