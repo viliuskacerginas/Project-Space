@@ -6,6 +6,7 @@
 }
 
 html, body {
+  position: fixed;
   height: 100%;
   background-color: black;
   color: #ffffff;
@@ -48,12 +49,11 @@ html, body {
 
 #HOME,#DESTINATION,#CREW,#TECHNOLOGY {
   overflow: auto;
-  height: 100vh;
+  height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center;
-  transform: translate3d(0,0,0);
+  background-position: center;  
 }
 /* REPEATED                   REPEATED                                 REPEATED  */
 
