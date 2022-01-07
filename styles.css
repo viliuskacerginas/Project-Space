@@ -568,23 +568,7 @@ body{
 .buttonH{
   margin: 2.5rem 0 5rem 0;
 }
-.fontH1{
-  font-size: clamp(0.9rem, 2.4vw, 1.75rem);
-}
-.fontH2{
-  font-size: clamp(7rem, 20vw, 14rem);
-}
-.fontH3{
-  font-size: clamp(0.92rem, 2.4vw, 1.8rem);
-  max-width: 54ch;
-  min-width: 54ch;
-  margin: auto;
-}
-.buttonH{
-  width: clamp(12rem, 35vw, 24rem);
-  height: clamp(12rem, 35vw, 24rem);
-  font-size: clamp(1.5rem, 4.5vw, 3rem);
-}
+
 /* HOME                    HOME                                      HOME */
 /* DESTINATION                    DESTINATION                    DESTINATION  */
 #DESTINATION{
