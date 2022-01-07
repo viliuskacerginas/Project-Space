@@ -53,6 +53,7 @@ html, body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  transform: translate3d(0,0,0);
 }
 /* REPEATED                   REPEATED                                 REPEATED  */
 
