@@ -4,9 +4,16 @@
   font-family: 'Bellefair', serif;
   font-weight: 400;
 }
-
+html {  
+  overflow: hidden;  
+}
+body{
+position: fixed;
+   overflow-y: scroll;
+   -webkit-overflow-scrolling: touch;
+}
 html, body {   
-  height: 100vh;  
+  height: 100%;  
   background-color: black;
   color: #ffffff;
   -ms-overflow-style: none;
