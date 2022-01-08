@@ -5,9 +5,9 @@
   font-weight: 400;
 }
 
-html, body {
-  position: fixed;  
+html, body {   
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   background-color: black;
   color: #ffffff;
   -ms-overflow-style: none;
