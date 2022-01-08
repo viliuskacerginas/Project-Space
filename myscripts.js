@@ -1,6 +1,3 @@
-window.onLoad = function() {
-window.scrollTo(0,1);
-}
 // NAV TAB                   NAV TAB                              NAV TAB
 function openTab(evt, tabName) {
 
@@ -21,6 +18,11 @@ function openTab(evt, tabName) {
 document.querySelector("button").click();
 // NAV TAB                   NAV TAB                              NAV TAB
 
+// HOME                       HOME                                     HOME
+function explore(){
+  setTimeout(function(){document.querySelectorAll(".tablinks")[1].click()},300);
+};
+// HOME                       HOME                                     HOME
 
 // DESTINATION                DESTINATION                          DESTINATION
 function openTabD(evt, tabName) {
