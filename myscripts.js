@@ -149,16 +149,19 @@ gridN.addEventListener('click', () => {
 })
 // BURGER                        BURGER                             BURGER
 let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+document.documentElement.lastElementChild.style.setProperty('--vh', `${vh}px`);
 for (i = 0; i < document.querySelectorAll('.tabcontent').length; i++) {
   document.querySelectorAll('.tabcontent')[i].style.setProperty('--vh', `${vh}px`);
-
 };
 
 window.addEventListener('resize', () => {
   // We execute the same script as before
   let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  document.documentElement.lastElementChild.style.setProperty('--vh', `${vh}px`);
   for (i = 0; i < document.querySelectorAll('.tabcontent').length; i++) {
     document.querySelectorAll('.tabcontent')[i].style.setProperty('--vh', `${vh}px`);
-
+document.documentElement.style.setProperty('--vh', `${vh}px`);
   };
 });
