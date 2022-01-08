@@ -1,3 +1,6 @@
+window.onLoad = function() {
+window.scrollTo(0,1);
+}
 // NAV TAB                   NAV TAB                              NAV TAB
 function openTab(evt, tabName) {
 
