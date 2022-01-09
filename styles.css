@@ -4,8 +4,8 @@
   font-family: 'Bellefair', serif;
   font-weight: 400;
 }
-html {  
-  overflow: hidden;  
+html {
+  overflow: hidden;
 }
 body{
 position: fixed;
@@ -542,7 +542,7 @@ body{
   padding: 0 4vw;
 }
 .tab button{
-  font-size: clamp(0.65rem, 1.9vw, 0.85rem);
+  font-size: clamp(0.65rem, 2vw, 1.3rem);
 }
 /* NAV                   NAV                                           NAV*/
 /* REPEATED                 REPEATED                                   REPEATED */
@@ -563,6 +563,15 @@ body{
     grid-column-start: 1;
     grid-column-end: 13;
 }
+.fontH3,.fontD2,.fontC3,.fontT1, .fontT3{
+  font-size: clamp(0.92rem, 2.4vw, 1.8rem);
+}
+.fontH1, .oneD h5, .oneC h5, .oneT h5{
+  font-size: clamp(0.9rem, 2.4vw, 1.75rem);
+}
+.fontC2, .fontT2{
+  font-size: clamp(1.9rem, 5.2vw, 3.9rem);
+}
 /* REPEATED                 REPEATED                                   REPEATED */
 
 /* HOME                    HOME                                      HOME */
@@ -575,14 +584,10 @@ body{
 .buttonH{
   margin: 2.5rem 0 5rem 0;
 }
-.fontH1{
-  font-size: clamp(0.9rem, 2.4vw, 1.75rem);
-}
 .fontH2{
   font-size: clamp(7rem, 20vw, 14rem);
 }
 .fontH3{
-  font-size: clamp(0.92rem, 2.4vw, 1.8rem);
   max-width: 54ch;
   min-width: 54ch;
   margin: auto;
@@ -601,20 +606,33 @@ body{
   grid-row-start: 4;
   grid-row-end: 4;
 }
+.tabD button{
+  font-size: clamp(0.85rem, 2vw, 1.3rem);
+}
 .threeD{
   grid-row-start: 3;
   grid-row-end: 3;
 }
 .threeD img{
+  width: 40vw;
   min-width: 16rem;
 }
 .fourD{
   grid-row-start: 5;
   grid-row-end: 5;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+.fontD1{
+  font-size: clamp(4.2rem, 11.5vw, 7.5rem);
 }
 .fontD2{
   max-width: 68ch;
+}
+.fontD3{
+  font-size: clamp(0.8rem, 2.2vw, 1.4rem);
+}
+.fontD4{
+  font-size: clamp(1.3rem, 3.5vw, 2.3rem);
 }
 /* DESTINATION                    DESTINATION                    DESTINATION  */
 /* CREW                          CREW                              CREW */
@@ -646,6 +664,9 @@ body{
 .fourC{
   grid-row-start: 3;
   grid-row-end: 7;
+}
+.fontC1{
+  font-size: clamp(1.2rem, 3.4vw, 2.5rem);
 }
 .fontC3{
   max-width: 62ch;
