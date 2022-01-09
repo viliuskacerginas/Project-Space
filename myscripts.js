@@ -20,7 +20,7 @@ document.querySelector("button").click();
 
 // HOME                       HOME                                     HOME
 function explore(){
-  setTimeout(function(){document.querySelectorAll(".tablinks")[1].click()},300);
+  setTimeout(function(){document.querySelectorAll(".tablinks")[1].click()},500);
 };
 // HOME                       HOME                                     HOME
 
