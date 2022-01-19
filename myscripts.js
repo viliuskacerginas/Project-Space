@@ -141,15 +141,15 @@ document.querySelector(".tabT button").click();
 // TECHNOLOGY                TECHNOLOGY                             TECHNOLOGY
 
 // BURGER                        BURGER                             BURGER
-const gridN = document.querySelector('.gridN');
+const navbarFlex = document.querySelector('.navbar-flex');
 let menuOpen = false;
-gridN.addEventListener('click', () => {
+navbarFlex.addEventListener('click', () => {
   if (!menuOpen) {
-    gridN.classList.add('open');
+    navbarFlex.classList.add('open');
     menuOpen = true;
   } else {
-    gridN.classList.remove('open');
+    navbarFlex.classList.remove('open');
     menuOpen = false;
   }
-})
+});
 // BURGER                        BURGER                             BURGER
