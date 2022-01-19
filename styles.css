@@ -64,13 +64,14 @@ html, body {
 /* REPEATED                   REPEATED                                 REPEATED  */
 
 /* NAV TAB                 NAV TAB                           NAV TAB*/
-.gridN {
+.navbar-flex {
   display: flex;
    width: 100%;
    align-items: center;
    position: absolute;
    justify-content: space-between;
    white-space: nowrap;
+   top: 4%;
 }
 
 .logo {
@@ -82,7 +83,7 @@ html, body {
   display: none;
 }
 
-.logohr2 {
+.logohr1 {
   width: 100%;
   border-style: solid;
   border-color: #3d3d3d;
@@ -98,12 +99,10 @@ html, body {
   float: right;
   padding: 0% 8.1vw;
   z-index: 2;
-  white-space: nowrap;
 }
 
 .tab button {
   color: white;
-  float: left;
   border: none;
   outline: none;
   cursor: pointer;
@@ -113,6 +112,7 @@ html, body {
   background-color: rgba(0, 0, 0, 0);
   letter-spacing: 0.15vw;
   font-size: clamp(0.85rem, 0.8vw, 1.3rem);
+  white-space: nowrap;
 }
 
 .tab button:hover, .tabD button:hover {
@@ -504,14 +504,12 @@ body{
   text-align: center;
 }
 /* NAV                   NAV                                           NAV*/
-.gridN{
+.navbar-flex{
   text-align: initial;
+  top: 0;
 }
-.logohr1,.logohr2{
+.logohr1{
   display: none;
-}
-.logo,.oneN{
-  grid-row-start: 1;
 }
 .tab{
   padding: 0 4vw;
@@ -692,7 +690,7 @@ body{
 
 /* PHONE                          PHONE                        PHONE */
 @media only screen and (max-width: 481px) {
-.logo,.logohr1,.logohr2,.tab{
+.logo,.logohr1,.tab{
   display: none;
 }
 .logoM{
@@ -704,7 +702,7 @@ body{
   z-index: 1;
 }
 /* NAV                              NAV                         NAV */
-.gridN{
+.navbar-flex{
   position: fixed;
   display: flex;
   justify-content:center;
@@ -715,6 +713,7 @@ body{
   transition: all .5s ease-in-out;
   right: 0;
   z-index: 1;
+  white-space: normal;
 }
 .tab{
   padding: 30vh 5vw 50vh 3vw;
@@ -725,7 +724,7 @@ body{
 .open .tab{
   display: initial;
 }
-.oneN{
+.mobile_nav{
   width: 1.5rem;
   height: 0.2rem;
   background: #fff;
@@ -733,8 +732,8 @@ body{
   transition: all .5s ease-in-out;
 }
 
-.oneN::before,
-.oneN::after{
+.mobile_nav::before,
+.mobile_nav::after{
   content: '';
   position: absolute;
   width: 1.5rem;
@@ -743,20 +742,20 @@ body{
   border-radius: 0.31rem;
   transition: all .5s ease-in-out;
 }
-.oneN::before{
+.mobile_nav::before{
   transform: translateY(-0.6rem);
 }
-.oneN::after{
+.mobile_nav::after{
   transform: translateY(0.6rem);
 }
-.gridN.open .oneN{
+.navbar-flex.open .mobile_nav{
   transform: translateX(-3.1rem);
   background: transparent;
 }
-.gridN.open .oneN::before{
+.navbar-flex.open .mobile_nav::before{
   transform: rotate(45deg) translate(2.19rem, -2.19rem);
 }
-.gridN.open .oneN::after{
+.navbar-flex.open .mobile_nav::after{
   transform: rotate(-45deg) translate(2.19rem, 2.19rem);
 }
 /* NAV                              NAV                               NAV */
